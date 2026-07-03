@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & Coffee Workshop 2026</title>
+    <style>
+        h3{
+            color:blue;
+        }
+        label{
+            color: black;
+        }
+        .argentina{
+            color: green;
+        }
+            .rainbow{
+                color:brown;
+            }
+    </style>
 </head>
 <body>
-    <h2>Learn HTML while enjoying free coffee! </h2>
+    <img src="media/coder's cafe.png" height="200" width="300">
+    <h2 style="color:#ff5100de;">Learn HTML while enjoying free coffee! </h2>
     <hr>
     <h3> Please fill in the following information</h3>
     <h3>Personal Information</h3>
@@ -14,7 +29,7 @@
     <input type="text" id="fullname" name="fullname" required>
     <br>
     <label for="Email"> Email:</label>
-    <input type="email" id="email" name="email" required><br>
+    <input type="email" id="email" placeholder="email" name="email" required><br>
     <label for="Phone"> Your Contact Number:</label>
     <input  type="number" id="number" name="number" required><br>
     <label for="age"> Age:</label>
@@ -24,9 +39,62 @@
         <option>Male</option>
         <option>Female</option>
         <option>Other</option>
+    </select> 
+    <br>
+    <br>
+    <label for="text">Tell us about ur coding journey briefly </label><br>
+    <input type="text">
+    <hr>
+    <h3> Workshop Details</h3>
+    <label for="Experience Level"class="argentina"> Experience Level:</label>
+    <select id="Experience" name="Experience">
+        <option> Beginner</option>
+        <option> Intermediate</option>
+        <option> Advanced </option>
     </select> <br>
+    <label for="Topic of Interest"class="argentina">Topic of Interest </label> <br>
+    <input type="checkbox" id="html" name="topics" value="html">
+    <label for="html">HTML</label><br>
+    <input type="checkbox" id="css" name="topics" value="css">
+    <label for="css">CSS</label><br>
+     <input type="checkbox" id="javascript" name="topics" value="javascript">
+     <label for="javascript">JavaScript</label><br>
+     <input type="checkbox" id="git" name="topics" value="git">
+     <label for="git">Git & GitHub</label>
+    <br>
+    <br>
+     <label class="argentina">Preferred Session:</label><br>
+     <input type="radio" id="morning" name="session" value="morning">
+     <label for="morning">Morning</label><br>
+     <input type="radio" id="afternoon" name="session" value="afternoon">
+     <label for="afternoon">Afternoon</label><br>
+     <input type="radio" id="evening" name="session" value="evening">
+     <label for="evening">Evening</label> <br>
+     <br>
+     <label class="argentina"> T- shirt Size: </label> <br>
+     <input type="radio" id="Small" name="Small" value="Small">
+     <label for="small"> Small</label> <br>
+     <input type="radio" id="Medium" name="Medium" value="Medium">
+     <label for="Medium"> Medium</label> <br>
+     <input type="radio" id="Large" name="Large" value="Large">
+     <label for="Large">Large</label> <br>
+     <input type="radio" id="XL" name="XL" value="XL">
+     <label for="XL">XL</label> <br>
+     <hr>
+      <label class="argentina" for="Dietary Preferences">Dietary Preferences </label> <br>
+      <input type="checkbox" id="Vegetarian" name="Diet" value="vegetarian">
+      <label for="vegetarian">Vegetarian</label> <br>
+      <input type="checkbox" id="Halal" name="diet" value="Halal">
+      <label for="Halal">Halal</label><br>
+       <input type="checkbox" id="None" name="diet" value="none">
+       <label for="None">None</label><br>
+    <hr>
+    <h3><input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the workshop rules.</label></h3>
 
+<br><br>
 
+<button class="rainbow" type="submit">Register Now</button>
 
 </body>
 </html>
